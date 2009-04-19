@@ -43,7 +43,6 @@ a {
 
 #description {
   color: #D34C75;
-  margin: 0 0 7em 0;
 }
 
   #description a {
@@ -56,14 +55,10 @@ a {
 
 /* Content */
 
-.post {
-  margin: 0 0 7em 0;
+.post pre {
+  margin: 0.31em 0px 1.56em;
+  padding: 0.63em;
 }
-
-  .post pre {
-    margin: 5px 0px 25px;
-    padding: 10px;
-  }
 
 .permalink {
   margin: 1.5em 0 0 0;
@@ -71,7 +66,7 @@ a {
 
   .permalink a {
     background: #292D49;
-    padding: 2px 5px;
+    padding: 0.13em 0.31em;
     color: #597C1D;
   }
 
@@ -79,9 +74,32 @@ a {
     color: #FBD329;
   }
 
+.row {
+  margin: 0 0 1.5em 0;
+  overflow: auto;
+}
+
+.column1 {
+  float: left;
+  width: 5.2em;
+}
+
+  .column1 .permalink {
+    margin: 0;
+  }
+
+.column2 {
+  float: left;
+  width: 39.8em;
+}
+
+.clear {
+  clear: both;
+}
+
 /* Quote */
 
-.quote p, .photo p, .video p, .audio p, #content .conversation, .text blockquote, #footer {
+.column2, .quote p, .photo p, .video p, .audio p, #content .conversation, .text blockquote, #footer {
   color: #304156;
 }
 
@@ -159,7 +177,7 @@ em {
 /* Footer */
 
 #footer {
-  margin: 0 0 7em 0;
+  margin: 7em 0 0 0;
 }
 
   #footer a {
