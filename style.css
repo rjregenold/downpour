@@ -1,7 +1,3 @@
-/* Reset Everything */
-
-@import url("./reset.css");
-
 /* Body, Wrappings, Anchors, anything sitewide */
 
 html {
@@ -16,6 +12,9 @@ body {
   background: #141721;
   padding: 60px;
   width: 45em;
+  background-image: url('http://blog.wintoni.us/images/winton.png');
+  background-repeat: no-repeat;
+  background-position: 32em 0em;
 }
 
 a {
