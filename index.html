@@ -201,20 +201,16 @@
       {/block:Posts}
       {block:Pagination}
         <div id="navigation">
-          {block:PreviousPage}<a href="{PreviousPage}" id="nav-prev" name="nav-prev">← Previous</a>{/block:PreviousPage}
-          &nbsp;
+          {block:PreviousPage}<a href="{PreviousPage}" id="nav-prev" name="nav-prev">← Previous</a>&nbsp;{/block:PreviousPage}
           <a href="/">Home</a>
-          &nbsp;
-          {block:NextPage}<a href="{NextPage}" id="nav-next" name="nav-next">Next →</a>{/block:NextPage}
+          {block:NextPage}&nbsp;<a href="{NextPage}" id="nav-next" name="nav-next">Next →</a>{/block:NextPage}
         </div>
       {/block:Pagination}
       {block:PermalinkPagination}
         <div id="navigation">
-          {block:PreviousPost}<a href="{PreviousPost}" id="nav-prev" name="nav-prev">← Previous</a>{/block:PreviousPost}
-          &nbsp;
+          {block:PreviousPost}<a href="{PreviousPost}" id="nav-prev" name="nav-prev">← Previous</a>&nbsp;{/block:PreviousPost}
           <a href="/">Home</a>
-          &nbsp;
-          {block:NextPost}<a href="{NextPost}" id="nav-next" name="nav-next">Next →</a>{/block:NextPost}
+          {block:NextPost}&nbsp;<a href="{NextPost}" id="nav-next" name="nav-next">Next →</a>{/block:NextPost}
         </div>
       {/block:PermalinkPagination}
       <!-- Footer -->
