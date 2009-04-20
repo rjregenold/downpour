@@ -86,11 +86,6 @@
               </div>
               <div class="column2">
                 <a href="{Permalink}"><img src="{PhotoURL-250}" width=150 alt="{PhotoAlt}" /></a>
-                {block:Caption}
-                  <p>
-                    {Caption}
-                  </p>
-                {/block:Caption}
               </div>
             </div>
           {/block:IndexPage}
@@ -103,7 +98,7 @@
                 </p>
               {/block:Caption}
               <div class="permalink">
-                <a href="{Permalink}">{MonthNumberWithZero}{DayOfMonthWithZero}{ShortYear}</a>
+                <a href="{Permalink}">Permalink</a>
               </div>
             </div>
           {/block:PermalinkPage}
@@ -180,7 +175,7 @@
               {/block:Title}
               {Body}
               <div class="permalink">
-                <a href="{Permalink}">{MonthNumberWithZero}{DayOfMonthWithZero}{ShortYear}</a>
+                <a href="{Permalink}">Permalink</a>
               </div>
             </div>
           {/block:PermalinkPage}
@@ -206,12 +201,20 @@
       {/block:Posts}
       {block:Pagination}
         <div id="navigation">
-          {block:PreviousPage} <a href="{PreviousPage}" id="nav-prev" name="nav-prev">← Previous</a> {/block:PreviousPage} {block:NextPage} <a href="{NextPage}" id="nav-next" name="nav-next">Next →</a> {/block:NextPage}
+          {block:PreviousPage}<a href="{PreviousPage}" id="nav-prev" name="nav-prev">← Previous</a>{/block:PreviousPage}
+          &nbsp;
+          <a href="/">Home</a>
+          &nbsp;
+          {block:NextPage}<a href="{NextPage}" id="nav-next" name="nav-next">Next →</a>{/block:NextPage}
         </div>
       {/block:Pagination}
       {block:PermalinkPagination}
         <div id="navigation">
-          {block:PreviousPost} <a href="{PreviousPost}" id="nav-prev" name="nav-prev">← Previous</a> {/block:PreviousPost} {block:NextPost} <a href="{NextPost}" id="nav-next" name="nav-next">Next →</a> {/block:NextPost}
+          {block:PreviousPost}<a href="{PreviousPost}" id="nav-prev" name="nav-prev">← Previous</a>{/block:PreviousPost}
+          &nbsp;
+          <a href="/">Home</a>
+          &nbsp;
+          {block:NextPost}<a href="{NextPost}" id="nav-next" name="nav-next">Next →</a>{/block:NextPost}
         </div>
       {/block:PermalinkPagination}
       <!-- Footer -->
