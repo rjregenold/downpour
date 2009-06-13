@@ -2,7 +2,7 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <title>{Title} - {Description}</title>
+    <title>{Description}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=920" />
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
@@ -29,9 +29,9 @@
     <script type="text/javascript" language="javascript" src="http://blog.wintoni.us/shjs/languages/sh.js"></script>
     <script type="text/javascript" language="javascript" src="http://blog.wintoni.us/shjs/languages/xml.js"></script>
     <!-- Styles -->
-    <link rel="stylesheet" href="http://blog.wintoni.us/downpour/reset.css" type="text/css" media="screen" charset="utf-8" />
-    <link rel="stylesheet" href="http://blog.wintoni.us/downpour/style.css?4" type="text/css" media="screen" charset="utf-8" />
-    <link rel="stylesheet" href="http://blog.wintoni.us/shjs/themes/bipolar.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="http://blog.wintoni.us/downpour/reset.css?{ShortYear}{MonthNumber}{DayOfMonth}{24Hour}" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="http://blog.wintoni.us/downpour/style.css?{ShortYear}{MonthNumber}{DayOfMonth}{24Hour}" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="http://blog.wintoni.us/shjs/themes/bipolar.css?{ShortYear}{MonthNumber}{DayOfMonth}{24Hour}" type="text/css" media="screen" charset="utf-8" />
     <style type="text/css" media="screen">
       {CustomCSS}
       body {
@@ -201,16 +201,15 @@
       {/block:Posts}
       {block:Pagination}
         <div id="navigation">
-          {block:PreviousPage}<a href="{PreviousPage}" id="nav-prev" name="nav-prev">← Previous</a>&nbsp;{/block:PreviousPage}
-          <a href="/">Home</a>
-          {block:NextPage}&nbsp;<a href="{NextPage}" id="nav-next" name="nav-next">Next →</a>{/block:NextPage}
+          {block:PreviousPage}<a href="{PreviousPage}" id="nav-prev" name="nav-prev">&larr; Previous</a>&nbsp;{/block:PreviousPage}
+          {block:NextPage}<a href="{NextPage}" id="nav-next" name="nav-next">Next &rarr;</a>{/block:NextPage}
         </div>
       {/block:Pagination}
       {block:PermalinkPagination}
         <div id="navigation">
-          {block:PreviousPost}<a href="{PreviousPost}" id="nav-prev" name="nav-prev">← Previous</a>&nbsp;{/block:PreviousPost}
+          {block:PreviousPost}<a href="{PreviousPost}" id="nav-prev" name="nav-prev">&larr; Previous</a>&nbsp;{/block:PreviousPost}
           <a href="/">Home</a>
-          {block:NextPost}&nbsp;<a href="{NextPost}" id="nav-next" name="nav-next">Next →</a>{/block:NextPost}
+          {block:NextPost}&nbsp;<a href="{NextPost}" id="nav-next" name="nav-next">Next &rarr;</a>{/block:NextPost}
         </div>
       {/block:PermalinkPagination}
       <!-- Footer -->
