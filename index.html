@@ -9,17 +9,17 @@
     <link rel="shortcut icon" href="{Favicon}" />
     <link rel="apple-touch-icon" href="http://assets.tumblr.com/images/default_avatar_128.gif" />
     <!-- Default Colors -->
-    <meta name="color:Background" content="#141721" />
-    <meta name="color:Text" content="#8DA1BD" />
-    <meta name="color:Links" content="#AEF23C" />
-    <meta name="color:Links Hover" content="#FBD329" />
-    <meta name="color:Heading" content="#FF84C7" />
-    <meta name="color:Heading Hover" content="#FBD329" />
-    <meta name="color:Description" content="#D34C75" />
-    <meta name="color:Permalink" content="#597C1D" />
-    <meta name="color:Permalink Hover" content="#FBD329" />
-    <meta name="color:Permalink Background" content="#292D49" />
-    <meta name="color:Text Alt" content="#304156" />
+    <meta name="color:Background" content="#211B1B" />
+    <meta name="color:Text" content="#F0BA9E" />
+    <meta name="color:Links" content="#0D7150" />
+    <meta name="color:Links Hover" content="#0E7644" />
+    <meta name="color:Heading" content="#D34F22" />
+    <meta name="color:Heading Hover" content="#D35E22" />
+    <meta name="color:Description" content="#F0BA9E" />
+    <meta name="color:Permalink" content="#211B1B" />
+    <meta name="color:Permalink Hover" content="#F08C69" />
+    <meta name="color:Permalink Background" content="#0D7150" />
+    <meta name="color:Text Alt" content="#AA4614" />
     <!-- Javascripts -->
 	<script type="text/javascript" src="http://binarylionstudios.com/blog/assets/syntaxhighlighter/Scripts/shCore.js"></script>
 	<script type="text/javascript" src="http://binarylionstudios.com/blog/assets/syntaxhighlighter/Scripts/shBrushJScript.js"></script>
@@ -41,6 +41,8 @@
       .permalink a { background: {color:Permalink Background}; color: {color:Permalink}; }    
       .permalink a:hover { color: {color:Permalink Hover}; }
       #footer, .quote p, .photo p, .video p, .audio p, #content .conversation, .text blockquote { color: {color:Text Alt}; }
+	  #footer a { color: {color:Links}; }
+	  #footer a:hover { color: {color:Links Hover}; }
     </style>
   </head>
   <body onload="sh_highlightDocument()">
@@ -214,9 +216,15 @@
             <input type="search" name="q" value="" results="5" />
           </p>
         </form>
-        <p id="attribution">
+		<p>
+			All content copyright &copy; 2010 by Binary Lion Studios, LLC.
+		</p>
+        <p>
           Theme <a href="http://github.com/rjregenold/downpour">modified</a> from a <a href="http://github.com/winton/downpour">modified</a> version of <a href="http://github.com/jimwhimpey/downpour">Downpour</a>.
         </p>
+		<p>
+			Syntax highlighting done using <a href="http://code.google.com/p/syntaxhighlighter/">syntaxhighlighting</a>.
+		</p>
       </div>
     </div>
   </body>
