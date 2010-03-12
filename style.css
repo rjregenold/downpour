@@ -11,7 +11,7 @@ body {
   color: #8DA1BD;
   background: #141721;
   padding: 60px;
-  width: 45em;
+/*  width: 45em;*/
 }
 
 a {
@@ -87,7 +87,7 @@ a {
 
 .column2 {
   float: left;
-  width: 39em;
+  /* width: 39em; */
 }
 
 .clear {
