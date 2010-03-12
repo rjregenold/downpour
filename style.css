@@ -166,6 +166,8 @@ em {
 
 .tags { padding: 0; margin: 0; }
 .tags ul { list-style: none; margin: 0; }
+.inline ul { display: inline; }
+.inline a { float: left; }
 .tags ul li { float: left; margin-right: 1em; }
 
 /* Navigation */

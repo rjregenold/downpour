@@ -159,8 +159,17 @@
                   <a href="{Permalink}">{MonthNumberWithZero}{DayOfMonthWithZero}{ShortYear}</a>
                 </div>
               </div>
-              <div class="column2">
+              <div class="column2 tags inline">
                 <a href="{Permalink}">{Title}</a>
+				{block:HasTags}
+				<ul>
+					<li>&nbsp;&nbsp;/</li>
+					{block:Tags}
+						<li><a href="{TagURL}">#{Tag}</a></li>
+					{/block:Tags}
+				</ul>
+				{/block:HasTags}
+				<div class="clear"><!-- --></div>
               </div>
             </div>
           {/block:IndexPage}
