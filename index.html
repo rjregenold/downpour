@@ -172,6 +172,14 @@
                 </h2>
               {/block:Title}
               {Body}
+			  <div class="tags">
+				<ul>
+					{block:Tags}
+						<li><a href="{TagURL}">#{Tag}</a></li>
+					{/block:Tags}
+				</ul>
+				<div class="clear"><!-- --></div>
+			  </div>
               <div class="permalink">
                 <a href="{Permalink}">Permalink</a>
               </div>
